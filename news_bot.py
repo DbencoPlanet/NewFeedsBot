@@ -5,6 +5,7 @@ import time
 import os
 from telegram import Update, Bot
 from telegram.ext import Application, CommandHandler, ContextTypes
+import asyncio
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
@@ -71,7 +72,8 @@ def main() -> None:
         time.sleep(1)
 
 if __name__ == '__main__':
-    main()
+    asyncio.run(main())
+    # main()
 
 
 

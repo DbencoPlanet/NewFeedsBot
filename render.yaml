@@ -1,8 +1,7 @@
 services:
   - type: web
-    name: telegram-news-bot
+    name: telegram-bot
     env: python
-    region: oregon
     plan: free
-    buildCommand: ''
-    startCommand: 'python news_bot.py'
+    buildCommand: 'pip install -r requirements.txt'
+    startCommand: 'hypercorn asgi:app --bind 0.0.0.0:8000'

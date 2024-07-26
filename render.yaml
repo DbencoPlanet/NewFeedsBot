@@ -4,4 +4,4 @@ services:
     env: python
     plan: free
     buildCommand: 'pip install -r requirements.txt'
-    startCommand: 'hypercorn asgi:app --bind 0.0.0.0:8000'
+    startCommand: "'python news_bot.py'"

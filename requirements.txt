@@ -2,3 +2,4 @@ python-telegram-bot
 hypercorn
 schedule
 python-dotenv
+requests
